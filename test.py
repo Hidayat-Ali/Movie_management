@@ -17,13 +17,13 @@
 
 # bookings=[]
 
-# # def displayMovies():
-# #     print(" \n All Movies ")
-# #     for i in data:
-# #         for key,value in i.items():
-# #             print(f"{key},{value} \n")
-# #         for time ,seat_avalaiblity in enumerate(i['show_time']):
-# #             print(time)
+# def displayMovies():
+#     print(" \n All Movies ")
+#     for i in data:
+#         for key,value in i.items():
+#             print(f"{key},{value} \n")
+#         for time ,seat_avalaiblity in enumerate(i['show_time']):
+#             print(time)
 
         
 
@@ -42,16 +42,22 @@
 #my code
 
 movies_database = [
-   { "movie_name" : "Tare zameen par", "show_time" : ["10.55", "08.30"], "price_ticket" : "500", "available_seats": "20"},
-   {"movie_name": "Chicichore", "show_time": ["01.55", "02.30"], "price_tic": "500", "availble_seats" :  "80"},
+   { "movie_name" : "Tare zameen par", "show_time" : ["10.55", "08.30"], "price_ticket" : "500", "available_seats": 20},
+   {"movie_name": "Chicichore", "show_time": ["01.55", "02.30"], "price_tic": "500", "availble_seats" :  80},
 ]
+
+
 
 
 def displaymovies():
     print("\n All Movies")
     for i in movies_database:
+
         for key, value in i.items():
-            print(f",{key}, {value} \n")
+           print(f"{key}, {value} \n")
+
+        for time,seat in enumerate(i["show_time"]):
+            print(time)
 
         print(".............")
 
@@ -60,3 +66,28 @@ def displaymovies():
 displaymovies()
 
 
+
+
+#search movie
+
+def search_movie(search):
+    allmovies =[]
+    for i in range(len(movies_database)):
+        a = movies_database[i]["movie_name"]
+        allmovies.append(a)
+
+    for movie in allmovies:
+        search = input("Enter the moveie you want to search: ")
+        if search == movie:
+            print("The movies is there")
+        else:
+            print("Movie does not exist")
+
+
+search_movie(Patrner)
+
+
+
+
+
+#book movie
