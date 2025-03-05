@@ -15,6 +15,9 @@
               
 # ]
 
+# 1: functional programing 2 : Object oriented programmig  3: Asynchronous Programming 
+
+
 # bookings=[]
 
 # def displayMovies():
@@ -25,11 +28,6 @@
 #         for time ,seat_avalaiblity in enumerate(i['show_time']):
 #             print(time)
 
-
-# displayMovies()
-
-
-# 1: functional programing 2 : Object oriented programmig  3: Asynchronous Programming 
 
 
 #my code
@@ -98,8 +96,5 @@ bookMovie()
 
 # search_movie()
 
+# displayMovies()
 
-
-
-
-#book movie
