@@ -15,6 +15,9 @@
               
 # ]
 
+# 1: functional programing 2 : Object oriented programmig  3: Asynchronous Programming 
+
+
 # bookings=[]
 
 # def displayMovies():
@@ -25,21 +28,10 @@
 #         for time ,seat_avalaiblity in enumerate(i['show_time']):
 #             print(time)
 
-        
-
-            
-
-            
-    
-
-
-# displayMovies()
-
-
-
 
 
 #my code
+
 
 # movies_database = [
 #    { "movie_name" : "Tare zameen par", "show_time" : ["10.55", "08.30"], "price_ticket" : "500", "available_seats": 20},
@@ -48,96 +40,43 @@
 
 
 
-
-# # def displaymovies():
-# #     print("\n All Movies")
-# #     for i in movies_database:
-
-# #         for key, value in i.items():
-# #            print(f"{key}, {value} \n")
-
-# #         for time,seat in enumerate(i["show_time"]):
-# #             print(time)
-
-# #         print(".............")
+ 
 
 
 
-# # displaymovies()
+def displaymovies():
+    print("\n All Movies")
+    for movie in movies_database:
+        # what to write here
+        print(movie['movie_name'])
+        print("ticket price",movie['price_ticket'])
+        for index,time in enumerate(movie["show_time"]):
+            print('show time',time)
+            print('available seats',movie['available_seats'][index])
+        # for index,seats in enumerate(movie['available_seats']):
+        #     print('availble seats',seats)
+    
+        print(".............")
+
+
+
+# displaymovies()
 
 
 
 
-# #search movie
 
-# def search_movie():
-#     allmovies =[]
-#     for i in range(len(movies_database)):
-#         a = movies_database[i]["movie_name"]
-#         allmovies.append(a)
-
-#     for movie in allmovies:
-#         search = input("Enter the moveie you want to search: ")
-#         if search == movie:
-#             print("The movies is there")
-#             break
-#         else:
-#             print("Movie does not exist")
-#             break
+    # for movie in allmovies:
+    #     search = input("Enter the moveie you want to search: ")
+    #     if search == movie:
+    #         print("The movies is there")
+    #         break
+    #     else:
+    #         print("Movie does not exist")
+    #         break
 
 
 # search_movie()
 
-
-#book movie
-
-
-
-movies_database = [
-    {"movie_name" : "Tare Zameen par", "price_ticket" : 500  , "show_time" : ["10.30", "12.30"], "available_tickets" : [10,20]},
-    {"movie_name" : "Krish", "price_ticket" : 900, "show_time" : ["10.56", "08.30"], "available_tickets" : [10,40]} 
-    ]
-
-
-
-#DISPLAY ALL MOVIES
-def displaymovies():
-    print("\n All Movies")
-    for movie in movies_database:
-        print("Movies_Name:", movie["movie_name"])
-        print("Ticket_Movie:", movie["price_ticket"])
-        
-        for index, time in enumerate(movie["show_time"]):
-            print("Timing:", time)
-            print("Avaible Seats", movie["available_tickets"][index])
-
-        print("................")
-
-
-#displaymovies()
-
-
-
-#BOOK MOVIE
-def book_movie():
-
-    for movie in movies_database:
-        input_movie = input("Enter the movie you want to watch: ")
-
-
-        if input_movie == movie["movie_name"]:
-            print("Yes Movie is here"
-            print("Book the ticket")
-            break
-        else:
-            print("No Movie is not here")
-
-
-book_movie()
-        
-
-        
-
-
-
+# displayMovies()
 
