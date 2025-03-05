@@ -32,13 +32,17 @@
 
 #my code
 
-movies_database = [
-   { "movie_name" : "Tare zameen par", "show_time" : ["10.55", "08.30"], "price_ticket" : 500, "available_seats": [20,40]},
-   {"movie_name": "Chicichore", "show_time": ["01.55", "02.30"], "price_ticket": 500, "available_seats" :  [80,60]},
-]
+
+# movies_database = [
+#    { "movie_name" : "Tare zameen par", "show_time" : ["10.55", "08.30"], "price_ticket" : "500", "available_seats": 20},
+#    {"movie_name": "Chicichore", "show_time": ["01.55", "02.30"], "price_tic": "500", "availble_seats" :  80},
+# ]
+
 
 
  
+
+
 
 def displaymovies():
     print("\n All Movies")
@@ -55,34 +59,12 @@ def displaymovies():
         print(".............")
 
 
+
 # displaymovies()
 
-# test case and edge case
-def bookMovie():
-    input_movie = input("Enter the movie you want to book")
-    input_movie.count
-    for movie in movies_database:
-        if movie['movie_name'] == input_movie:
-            print("yes this movie exitst  you can boook the ticket")
-            break
-
-
-    # if input_movie == movies_database['movie_name']
-
-bookMovie()
 
 
 
-
-
-#search movie
-
-# def search_movie():        
-   
-    # allmovies =[] 
-    # for i in range(len(movies_database)):     
-    #     a = movies_database[i]["movie_name"]
-    #     allmovies.append(a)
 
     # for movie in allmovies:
     #     search = input("Enter the moveie you want to search: ")
